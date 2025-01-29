@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS securebank
 WORKDIR /app
 
-COPY backend/SecureBank/SecureBank.csproj ./
+COPY src/SecureBank/SecureBank.csproj ./
 RUN dotnet restore;
 
 COPY src/SecureBank/ ./
